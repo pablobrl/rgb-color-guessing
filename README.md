@@ -8,7 +8,15 @@ This project was developed using React, Typescript and Vite.
 
 ## Starting
 
-Run the development server using:
+Install the dependencies using:
+
+```
+npm install
+or
+yarn
+```
+
+Then, run the development server using:
 
 ```
 npm run dev
