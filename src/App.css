@@ -1,0 +1,75 @@
+main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: var(--spacing);
+}
+
+.stats {
+	border-radius: var(--border-rounding);
+	grid-column: span 3;
+	box-shadow: var(--shadow);
+	background-color: var(--surface);
+	display: flex;
+}
+
+.stat {
+	padding: var(--spacing);
+	width: 50%;
+	text-align: center;
+}
+
+.stat + .stat {
+	border-left: 1px solid var(--border-color);
+}
+
+.stat .stat-title,
+.stat .stat-value {
+	display: block;
+	width: 100%;
+}
+
+.stat .stat-title {
+	color: var(--text);
+	font-size: 1rem;
+}
+
+.stat .stat-value {
+	color: var(--text-emphasis);
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.color-wrapper {
+	border-radius: var(--border-rounding);
+	grid-column: span 3;
+	aspect-ratio: 16/9;
+	box-shadow: var(--shadow);
+	background-color: var(--surface);
+	padding: var(--spacing);
+}
+
+.color {
+	height: 100%;
+	border-radius: var(--border-rounding);
+	box-shadow: var(--shadow);
+}
+
+@media only screen and (max-width: 400px) {
+	.container {
+		grid-template-columns: minmax(0, 1fr);
+		width: 100%;
+		padding: var(--spacing);
+	}
+
+	.color {
+		grid-column: span 1;
+	}
+}

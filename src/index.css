@@ -1,0 +1,44 @@
+:root {
+	--primary: #64748b;
+	--primary-darker: #475569;
+	--shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+	--border-rounding: 0.5rem;
+	--spacing: 0.75rem;
+	--text: #e2e8f0;
+	--text-emphasis: #f8fafc;
+	--surface: #334155;
+	--border-color: #475569;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body,
+document {
+	color: #e2e8f0;
+	font-family: 'Inter';
+	font-size: 20px;
+}
+
+body {
+	background-color: #1e293b;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	html {
+		font-size: 12px;
+	}
+}
